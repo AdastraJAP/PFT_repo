@@ -1,10 +1,9 @@
 #ifndef APP_HPP
 #define APP_HPP
-#include "include/App.hpp"
-#include "include/User.hpp"
-#include "include/Transaction.hpp"
-#include "include/BudgetManager.hpp"
-#include "include/DBManager.hpp"
+#include "User.hpp"
+#include "Transaction.hpp"
+#include "BudgetManager.hpp"
+#include "DBManager.hpp"
 #include <iostream>
 #include <vector>
 using namespace std;
