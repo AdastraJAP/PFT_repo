@@ -16,7 +16,7 @@ class Database {
         bool addUser(const User& user);
         bool getUser(const string& username, User& outUser);
         bool addTransaction(const string& username/*, const Transaction& transact*/);
-        boool getTransaction(const string& username/*, vector<Transaction>& outTransactions*/);
+        bool getTransaction(const string& username/*, vector<Transaction>& outTransactions*/);
     private:
         sqlite3* db;
 };
