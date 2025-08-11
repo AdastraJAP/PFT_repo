@@ -7,4 +7,17 @@
 #include <string>
 #include <sqlite3.h>
 
+class Database {
+    public:
+        Database(const string db_path);
+        ~Database();
+
+        bool initSchema();
+        bool addUser(const User& user);
+        bool getUser(const string& username, User& outUser);
+        bool addTransaction(const string& username/*, const Transaction& transact*/);
+        boool getTransaction(const string& username/*, vector<Transaction>& outTransactions*/);
+    private:
+        sqlite3* db;
+};
 #endif
