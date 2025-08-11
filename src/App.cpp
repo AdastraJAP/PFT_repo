@@ -7,8 +7,8 @@
 using namespace std;
 
 void App::run(){
-    //DBManager database("data/PFT.db");
-    //database.initSchema();
+    DBManager database;
+    database.initSchema();
 }
 /*void MainMenu();
 void AddTransaction();
