@@ -47,5 +47,6 @@ class DBManager {
         bool beginTransaction();
         bool commitTransaction();
         bool rollbackTransaction();
+        int getUserIdFromUsername(const std::string& username);
 };
 #endif

@@ -21,6 +21,7 @@ public:
     // Getters
     std::string getName() const { return name; }
     std::string getEmail() const { return email; }
+    std::string getPasswordHash() const { return passwordHash; }
 
     // Authentication
     bool authenticate(const std::string& attempt) const;
